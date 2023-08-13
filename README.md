@@ -7,3 +7,6 @@ The app generates a tailored weekly workout routine, precisely aligned with the 
 To provide a visual understanding of the app's functionality, refer to the example images showcasing the user interface as well as a sample output. Our application strives to bridge the gap between generic fitness advice and personalized, actionable strategies. Experience a holistic fitness journey with the LLM Fitness Trainer Nutritionist App.
 
 To run this app on your own, get your own Replicate API key at: https://replicate.com/ and input it in the app.py script for the os.environ['REPLICATE_API_TOKEN'] variable.
+
+![Example image of the app interface](interface.png) ![Example of inputs to the app interace](interfaceex.png) 
+![Example output for the weekly meal plan](exoutput.png)

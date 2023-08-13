@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Trainer/Nutritionist App</title>
+    <style>
+        body {
+            background-color: #2084ab; /* Baby blue-green background color */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            position: relative; /* Added */
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid #ccc;
+            position: relative; /* Added */
+        }
+        
+        th, td {
+            border: 1px solid #ccc;
+            padding: 8px;
+            text-align: left;
+        }
+
+        .form-container input[type="text"],
+        .form-container select {
+            width: 100%;
+            padding: 8px;
+            border: none;
+            background-color: #f0f0f0;
+        }
+        
+        .form-container input[type="submit"] {
+            background-color: #87CEEB; /* Baby blue-green submit button color */
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px 20px;
+            border-radius: 5px;
+            display: block; /* Added */
+            margin: 0 auto; /* Added */
+        }
+
+        .app-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: black; /* Title text color changed to black */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <div class="app-title">Personalized Fitness Trainer/Nutritionist</div>
+        <form method="post">
+            <table>
+                <tr>
+                    <th>Age:</th>
+                    <td><input type="text" name="age"></td>
+                </tr>
+                <tr>
+                    <th>Weight (in pounds):</th>
+                    <td><input type="text" name="weight"></td>
+                </tr>
+                <tr>
+                    <th>Height (in feet):</th>
+                    <td><input type="text" name="height"></td>
+                </tr>
+                <tr>
+                    <th>Gender:</th>
+                    <td>
+                        <select name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Main Fitness Goal:</th>
+                    <td><input type="text" name="main_goal"></td>
+                </tr>
+                <tr>
+                    <th>Physical Restrictions:</th>
+                    <td><input type="text" name="physical_restrictions"></td>
+                </tr>
+                <tr>
+                    <th>Dietary Restrictions:</th>
+                    <td><input type="text" name="dietary_restrictions"></td>
+                </tr>
+                <tr>
+                    <th>Any Other Considerations:</th>
+                    <td><input type="text" name="extra"></td>
+                </tr>
+            </table>
+            <input type="submit" value="Generate Plans">
+        </form>
+    </div>
+</body>
+</html>
